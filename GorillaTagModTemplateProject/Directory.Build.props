@@ -7,9 +7,14 @@
 		<PluginsPath>$(GamePath)\BepInEx\plugins</PluginsPath>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(CI)'=='TRUE'">
-		<GameAssemblyPath>.\Libs</GameAssemblyPath>
-		<BepInExAssemblyPath>.\Libs</BepInExAssemblyPath>
-		<PluginsPath>.\Libs</PluginsPath>
+		<GamePath>C:\Program Files (x86)\Steam\steamapps\common\Gorilla Tag</GamePath>
+		<Assembly>$(GamePath)\Gorilla Tag_Data\Managed\Assembly-CSharp.dll</Assembly>
+		<PhotonRealtime>$(GamePath)\Gorilla Tag_Data\Managed\PhotonRealtime.dll</PhotonRealtime>
+		<PhotonUnityNetworking>$(GamePath)\Gorilla Tag_Data\Managed\PhotonUnityNetworking.dll</PhotonUnityNetworking>
+		<UnityEngine>$(GamePath)\Gorilla Tag_Data\Managed\UnityEngine.dll</UnityEngine>
+		<UnityEngineCoreModule>$(GamePath)\Gorilla Tag_Data\Managed\UnityEngine.CoreModule.dll</UnityEngineCoreModule>
+		<BepInExAssemblyPath>$(GamePath)\BepInEx\core</BepInExAssemblyPath>
+		<PluginsPath>$(GamePath)\BepInEx\plugins</PluginsPath>
 		<WarningLevel>0</WarningLevel>
-	</PropertyGroup>
+</PropertyGroup>
 </Project>
