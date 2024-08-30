@@ -1,4 +1,4 @@
-# Gorilla Tag Mod Template
+# Gorilla Tag Mod Template (Changes by HyperDondon)
 
 .NET Project Template for PCVR Gorilla Tag Mods
 
