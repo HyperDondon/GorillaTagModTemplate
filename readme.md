@@ -25,4 +25,7 @@ Change the game directory in [Directory.Build.props](GorillaTagModTemplateProjec
 ## Step 4
 ![image](https://github.com/user-attachments/assets/1c63c50d-66ef-4357-957b-cac8df1e54db)
 
+## Step 5
+The .dll is now in GorillaTagModTemplateProject/bin/Release/netstandard2.1/
+
 
