@@ -1,1 +1,3 @@
-src/nupkg
+GorillaTagModTemplateProject/bin/
+GorillaTagModTemplateProject/obj/
+.vs/
