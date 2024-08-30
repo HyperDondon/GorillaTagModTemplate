@@ -10,3 +10,16 @@ The template creates the following files of note:
 * [Patches/ExamplePatch.cs](GorillaTagModTemplateProject/Patches/ExamplePatch.cs): This demonstrates how patches are created, you should remove or modify it as you see fit.
 * [MakeRelease.ps1](GorillaTagModTemplateProject/MakeRelease.ps1): This script generates a [MonkeModManager](https://github.com/DeadlyKitten/MonkeModManager/) compatible release (named ModName-v.zip). You should use this to create builds that you share with others.
 * [Directory.Build.props](GorillaTagModTemplateProject\Directory.Build.props): This file contains information about where dependencies are located. If you are getting CS024 (type could not be found) errors, GamePath is probably wrong. 
+
+# Building
+
+## Step 1
+Change the game directory in [Directory.Build.props](GorillaTagModTemplateProject\Directory.Build.props) to your actual Gorilla Tag directory.
+
+## Step 2
+![image](https://github.com/user-attachments/assets/2af451ab-98e1-4ff7-8ec7-9cba3728bbb4)
+
+## Step 3
+![image](https://github.com/user-attachments/assets/1c63c50d-66ef-4357-957b-cac8df1e54db)
+
+
