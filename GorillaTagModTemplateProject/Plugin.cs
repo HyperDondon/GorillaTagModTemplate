@@ -1,5 +1,6 @@
 ﻿using System;
 using BepInEx;
+using Photon.Pun;
 using UnityEngine;
 using Utilla;
 
@@ -15,7 +16,7 @@ namespace GorillaTagModTemplateProject
 	[BepInPlugin(PluginInfo.GUID, PluginInfo.Name, PluginInfo.Version)]
 	public class Plugin : BaseUnityPlugin
 	{
-		bool inRoom;
+		public static bool inModded;
 
 		void Start()
 		{
@@ -50,26 +51,6 @@ namespace GorillaTagModTemplateProject
 		void Update()
 		{
 			/* Code here runs every frame when the mod is enabled */
-		}
-
-		/* This attribute tells Utilla to call this method when a modded room is joined */
-		[ModdedGamemodeJoin]
-		public void OnJoin(string gamemode)
-		{
-			/* Activate your mod here */
-			/* This code will run regardless of if the mod is enabled*/
-
-			inRoom = true;
-		}
-
-		/* This attribute tells Utilla to call this method when a modded room is left */
-		[ModdedGamemodeLeave]
-		public void OnLeave(string gamemode)
-		{
-			/* Deactivate your mod here */
-			/* This code will run regardless of if the mod is enabled*/
-
-			inRoom = false;
 		}
 	}
 }
